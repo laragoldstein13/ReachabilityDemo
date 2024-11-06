@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: reachabilitydemo
+  namespace: default
+  labels:
+    app: demo-1
+spec:
+  containers:
+  - name: reachabilitydemo
+    image: IMAGE_NAME_PLACEHOLDER
+    ports:
+    - name: http
+      containerPort: 80
+  imagePullPolicy: IfNotPresent
+  nodeSelector:
+    kubernetes.io/os: linux
