@@ -14,6 +14,8 @@ This demo deploys a container image with reachable vulnerabilities from [Damn Vu
 * Azure Container Registry (ACR) with an [admin account](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-authentication?tabs=azure-cli#admin-account). 
 * [Connection between AKS cluster and ACR](https://learn.microsoft.com/en-us/azure/aks/cluster-container-registry-integration?tabs=azure-cli#configure-acr-integration-for-an-existing-aks-cluster).
 * Endor Labs license.
+* Defender CSPM license.
+* Connector for Endor Labs in Defender for Cloud.
   
 # Azuure DevOps Configuration
 1. Clone this repository in Azure DevOps.
