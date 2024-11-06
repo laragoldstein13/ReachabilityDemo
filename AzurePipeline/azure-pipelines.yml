@@ -3,7 +3,6 @@ trigger: none
 variables:
   imageName: 'reachabilitydemo'
   tag: '$(Build.BuildId)'
-  group: tenant-variables
 
 stages:
   - stage: Scan
@@ -11,6 +10,8 @@ stages:
     jobs:
       - job: PrepareAndScan
         displayName: 'Prepare Environment and Run Scan'
+        variables:
+          - group: tenant-variables
         pool:
           vmImage: 'ubuntu-latest'
         steps:
