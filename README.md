@@ -37,7 +37,7 @@ This demo deploys a container image with reachable vulnerabilities from [Damn Vu
 4. Create a variable for the ACR login server name (e.g., reachability.azurecr.io).
 5. Create a new workflow using the existing file located at .github/workflows/containermapping.yml.
 6. Save and run the workflow.
-7. Deploy the container image from ACR to your AKS cluster in the Azure Portal. The easiest way to do this is to navigate to the AKS cluster and select Create > Create a quickstar application. Note that your registry and Kubernetes cluser must be [linked](https://learn.microsoft.com/en-us/azure/aks/cluster-container-registry-integration?tabs=azure-cli#configure-acr-integration-for-an-existing-aks-cluster) for this to work.
+7. Deploy the container image from ACR to your AKS cluster in the Azure Portal. The easiest way to do this is to navigate to the AKS cluster and select Create > Create a quickstar application. Note that your registry and Kubernetes cluser must be [linked](https://learn.microsoft.com/en-us/azure/aks/cluster-container-registry-integration?tabs=azure-cli#configure-acr-integration-for-an-existing-aks-cluster) for this to work. To see the attack path, the container should be exposed via a service in Kubernetes. It is not recommended to do this in production tenants. 
 ![image](https://github.com/user-attachments/assets/74bb2699-1e89-4f34-9140-03bba0b75fae)
  
 
