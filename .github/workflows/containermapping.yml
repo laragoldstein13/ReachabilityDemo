@@ -1,4 +1,4 @@
-name: Build Contoso Images
+name: Build Container Image
 
 on: push
 
@@ -16,14 +16,14 @@ jobs:
           
       - uses: azure/docker-login@v1
         with:
-          login-server: <>.azurecr.io
+          login-server: ${{ vars.CONTAINERREGISTRY }}
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
 
       - name: Build, tag, and push image to Azure Container Registry
         id: build-image
         env:
-          ACR_REGISTRY: <>.azurecr.io
+          ACR_REGISTRY: ${{ vars.CONTAINERREGISTRY }}
           ACR_REPOSITORY: ghreachability  
           IMAGE_TAG: ${{ github.sha }}
         run: |
