@@ -17,7 +17,7 @@ This demo deploys a container image with reachable vulnerabilities from [Damn Vu
 * Defender CSPM license.
 * Connector for Endor Labs in Defender for Cloud.
   
-# Azuure DevOps Configuration
+# Azure DevOps Configuration
 1. Clone this repository in Azure DevOps.
 2. Create a service connection in Azure DevOps to Docker. Select 'Other' when you have to specify the type of connection. Here you must specify the container registry login server, username, and password that come from access keys in Azure Container Registry. 
 ![image](https://github.com/user-attachments/assets/a1535e01-9d22-4df8-8bf0-e83cf070ba34)
